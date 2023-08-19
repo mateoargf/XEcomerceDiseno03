@@ -17,6 +17,10 @@ header{
     justify-content: space-between;
 }
 
+.search ::placeholder{
+    color: #575757;
+}
+
 .containerLogo{
     display: flex;
     align-items: center;
@@ -44,3 +48,32 @@ header{
     text-decoration: none;
     color: black;
 }
+
+.headerIcons{
+    text-align: center; 
+    display: flex;
+    align-items: center;
+}
+
+.search{
+    background-color: #FEFEFE;
+    border: 1px solid #343434;
+    border-radius: 2px;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search input,
+.lupa{
+    border: none;
+    color: #575757;
+    font-weight: 600;
+    outline: none;
+}
+
+.search input{
+    width: 5rem;
+}
+
