@@ -15,11 +15,49 @@ body{
 header{
     display: flex;
     justify-content: space-between;
+    z-index: 1000;
+}
+
+.containerNav a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    border-radius: 4px;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: 0.3s ease-in-out;
+}
+
+.containerNav a:hover::before{
+    transform-origin: left;
+    transform: scaleX(1);
 }
 
 .search ::placeholder{
     color: #4A4A4A;
     font-family: 'Syne', sans-serif;
+}
+
+.search::after{
+    content: "";
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    bottom: 5px;
+    right: 5px;
+    transition: 0.2s;
+    border: 2px solid #4A4A4A;
+    border-radius: 5px;
+}
+
+.search:hover::after{
+    bottom: 0;
+    right: 0;
 }
 
 .containerLogo{
@@ -48,6 +86,7 @@ header{
     margin-left: 1rem;
     text-decoration: none;
     color: black;
+    position: relative;
 }
 
 .headerIcons{
@@ -66,10 +105,13 @@ header{
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    cursor: pointer;
+    position: relative;
 }
 
 .search button{
     border: none;
+    cursor: pointer;
 }
 
 .search input,
@@ -83,4 +125,5 @@ header{
 .search input{
     text-align: center;
     width: 3rem;
+    cursor: pointer;
 }
