@@ -79,7 +79,7 @@ header {
 }
 
 .headerIcons {
-    width: 20vw;
+    width: 18vw;
     text-align: center;
     display: flex;
     align-items: center;
@@ -160,12 +160,20 @@ header {
     }
 
     .headerIcons {
-        width: 32vw;
+        width: 28vw;
     }
 }
 
 
-@media screen and (min-width:1024px) and (max-width:1440px) {}
+@media screen and (min-width:1024px) and (max-width:1440px) {
+    .headerIcons {
+        width: 15vw;
+    }
+}
 
 
-@media screen and (min-width:1441px) and (max-width:1920px) {}
+@media screen and (min-width:1441px) and (max-width:1920px) {
+    .headerIcons {
+        width: 11vw;
+    }
+}
