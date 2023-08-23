@@ -136,6 +136,12 @@ header {
 }
 
 @media screen and (max-width:767px) {
+
+    body {
+        width: 95vw;
+        margin: 0 auto;
+    }
+
     .containerNav {
         display: none;
     }
@@ -146,11 +152,11 @@ header {
 
     .headerIcons {
         justify-content: space-between;
-        width: 32vw;
+        width: 40vw;
     }
 
     .search {
-        width: 5rem;
+        width: 7rem;
     }
 }
 
@@ -175,5 +181,19 @@ header {
 @media screen and (min-width:1441px) and (max-width:1920px) {
     .headerIcons {
         width: 11vw;
+    }
+
+    .search input {
+        width: 4.5rem;
+    }
+
+    .search input,
+    .lupa {
+        font-size: 1rem;
+    }
+
+    .carrito,
+    .menuIcon {
+        font-size: 1.2rem;
     }
 }
