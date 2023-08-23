@@ -139,6 +139,7 @@ header {
     .containerNav {
         display: none;
     }
+
     .carrito {
         display: none;
     }
@@ -153,7 +154,15 @@ header {
     }
 }
 
-@media screen and (min-width:768px) and (max-width:1023px) {}
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .containerNav {
+        display: none;
+    }
+
+    .headerIcons {
+        width: 32vw;
+    }
+}
 
 
 @media screen and (min-width:1024px) and (max-width:1440px) {}
