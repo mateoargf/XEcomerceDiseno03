@@ -1,7 +1,20 @@
+
+.heroBotones button:hover::after{
+    /* content: "";
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 5px;
+    left: 5px;
+    background-color: #CDEACC;
+    background-color: #62A869; */
+}
+
 .hero {
     display: flex;
     height: 90vh;
-    background: linear-gradient(45deg,#62A869,#62A869,#62A869,#62A869,#82C688,#82C688,#8ECE92,#B6F2B2);
+    background: linear-gradient(45deg, #62A869, #62A869, #62A869, #62A869, #82C688, #82C688, #8ECE92, #B6F2B2);
     /*  ,*/
     background-size: 400% 400%;
     animation: fondoHero 10s ease-in-out infinite;
@@ -16,15 +29,80 @@
     margin: 0 auto;
 }
 
+.heroDivUno h2 span {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.heroDivDos {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+
+.heroTexto {
+    height: 17vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heroTexto h4 {
+    color: white;
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    margin-top: 0.7rem;
+}
+
+.heroTexto h1 {
+    letter-spacing: 0.05rem;
+    font-size: 1.8rem;
+    margin-left: 0.3rem;
+}
+
+.heroTexto p {
+    letter-spacing: 0.02rem;
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-left: 0.3rem;
+}
+
+.heroBotones{
+    display: flex;
+    gap: 1.2rem;
+    margin-left: 0.3rem;
+}
+
+.heroBotones button{
+    background-color: #000000;
+    color: #bebebe;
+    outline: none;
+    height: 2.5rem;
+    width: 10rem;
+    border: 2px solid #000000;
+    border-radius: 3px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
 /* filter: drop-shadow para dar sombra a img */
 
 @keyframes fondoHero {
     0% {
         background-position: 0 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0 50%;
     }
