@@ -16,6 +16,8 @@
     margin: 0 auto;
 }
 
+/* filter: drop-shadow para dar sombra a img */
+
 @keyframes fondoHero {
     0% {
         background-position: 0 50%;
