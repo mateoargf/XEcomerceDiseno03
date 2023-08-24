@@ -35,11 +35,10 @@
 }
 
 .heroDivDos {
-    height: 25vh;
+    height: 27vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid red;
 }
 
 .heroTexto {
