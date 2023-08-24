@@ -8,14 +8,14 @@
 
 body {
     background-color: #fff;
-    width: 85vw;
-    margin: 0 auto;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     z-index: 1000;
+    width: 85vw;
+    margin: 0 auto;
 }
 
 .containerNav a::before {
@@ -137,7 +137,7 @@ header {
 
 @media screen and (max-width:767px) {
 
-    body {
+    header {
         width: 95vw;
         margin: 0 auto;
     }
