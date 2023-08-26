@@ -1,23 +1,28 @@
-
-.heroBotones button:hover::after{
-    /* content: "";
+.btnHombre::after,
+.btnMujer::after {
+    content: "";
     width: 100%;
-    z-index: -1;
     position: absolute;
     height: 100%;
-    top: 5px;
-    left: 5px;
-    background-color: #CDEACC;
-    background-color: #62A869; */
+    border-radius: 3px;
+    z-index: -1;
+    transform: scale(0);
+    pointer-events: none;
+}
+
+.btnHombre:hover::after,
+.btnMujer:hover::after {
+    bottom: -7px;
+    right: -7px;
+    border: 2px solid #D3EED2;
 }
 
 .hero {
     display: flex;
     height: 90vh;
-    background: linear-gradient(45deg, #62A869, #62A869, #62A869, #62A869, #82C688, #82C688, #8ECE92, #B6F2B2);
-    /*  ,*/
+    background: linear-gradient(45deg, #62A869, #62A869, #9adb9f, #62A869, #62A869);
     background-size: 400% 400%;
-    animation: fondoHero 10s ease-in-out infinite;
+    animation: fondoHero 12s ease-in-out infinite;
 }
 
 .heroDivUno {
@@ -68,27 +73,41 @@
     margin-left: 0.3rem;
 }
 
-.heroBotones{
+.heroBotones {
     display: flex;
     gap: 1.2rem;
     margin-left: 0.3rem;
 }
 
-.heroBotones button{
+.btnHombre,
+.btnMujer {
     background-color: #000000;
     color: #bebebe;
     outline: none;
     height: 2.5rem;
     width: 10rem;
-    border: 2px solid #000000;
+    border:none;
     border-radius: 3px;
     font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
     position: relative;
+}
+
+.heroSiguiente {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.flechaSiguiente {
+    font-size: 1.7rem;
+    font-weight: 800;
 }
 
 /* filter: drop-shadow para dar sombra a img */
