@@ -4,9 +4,6 @@
 .btnMujer::after {
     position: absolute;
     content: "";
-    right: 0;
-    top: 0;
-    transition: all 0.3s ease;
 }
 
 
@@ -24,7 +21,8 @@
 
 .btnHombre:hover,
 .btnMujer:hover {
-    background: #bebebe;
+    background: transparent;
+    opacity: 0.9;
     box-shadow: none;
 }
 
@@ -70,11 +68,13 @@
 .btnHombre span:hover:before,
 .btnMujer span:hover:before {
     height: 100%;
+    transition: all 0.7s ease-in-out;
 }
 
 .btnHombre span:hover:after,
 .btnMujer span:hover:after {
     width: 100%;
+    transition: all 0.7s ease-in-out;
 }
 
 .hero {
@@ -150,13 +150,13 @@
     border-radius: 3px;
     font-weight: 700;
     cursor: pointer;
+    transition: all 0.4s ease-in-out;
 }
 
 
 .btnHombre span,
 .btnMujer span {
     position: relative;
-    display: block;
     width: 100%;
     height: 100%;
     display: flex;
