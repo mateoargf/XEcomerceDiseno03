@@ -1,20 +1,80 @@
+.btnHombre::before,
 .btnHombre::after,
+.btnMujer::before,
 .btnMujer::after {
-    content: "";
-    width: 100%;
     position: absolute;
-    height: 100%;
-    border-radius: 3px;
-    z-index: -1;
-    transform: scale(0);
-    pointer-events: none;
+    content: "";
+    right: 0;
+    top: 0;
+    transition: all 0.3s ease;
 }
 
-.btnHombre:hover::after,
-.btnMujer:hover::after {
-    bottom: -7px;
-    right: -7px;
-    border: 2px solid #D3EED2;
+
+.btnHombre::before,
+.btnMujer::before {
+    height: 0%;
+    width: 2px;
+}
+
+.btnHombre::after,
+.btnMujer::after {
+    width: 0%;
+    height: 2px;
+}
+
+.btnHombre:hover,
+.btnMujer:hover {
+    background: #bebebe;
+    box-shadow: none;
+}
+
+.btnHombre:hover:before,
+.btnMujer:hover:before {
+    height: 100%;
+}
+
+.btnHombre:hover:after,
+.btnMujer:hover:after {
+    width: 100%;
+}
+
+.btnHombre span:hover,
+.btnMujer span:hover {
+    color: #000;
+}
+
+.btnHombre span:before,
+.btnHombre span:after,
+.btnMujer span:before,
+.btnMujer span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: #000;
+    transition: all 0.3s ease;
+}
+
+.btnHombre span:before,
+.btnMujer span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.btnHombre span:after,
+.btnMujer span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btnHombre span:hover:before,
+.btnMujer span:hover:before {
+    height: 100%;
+}
+
+.btnHombre span:hover:after,
+.btnMujer span:hover:after {
+    width: 100%;
 }
 
 .hero {
@@ -40,7 +100,7 @@
 }
 
 .heroDivDos {
-    height: 27vh;
+    height: 28vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -81,20 +141,27 @@
 
 .btnHombre,
 .btnMujer {
-    background-color: #000000;
+    background-color: #000;
     color: #bebebe;
+    border: none;
     outline: none;
     height: 2.5rem;
     width: 10rem;
-    border:none;
     border-radius: 3px;
     font-weight: 700;
+    cursor: pointer;
+}
+
+
+.btnHombre span,
+.btnMujer span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
-    position: relative;
 }
 
 .heroSiguiente {
