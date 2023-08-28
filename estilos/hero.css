@@ -79,7 +79,7 @@
 
 .hero {
     display: flex;
-    height: 90vh;
+    height: 88vh;
     background: linear-gradient(45deg, #62A869, #62A869, #9adb9f, #62A869, #62A869);
     background-size: 400% 400%;
     animation: fondoHero 12s ease-in-out infinite;
