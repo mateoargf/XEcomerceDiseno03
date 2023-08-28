@@ -83,6 +83,14 @@
     background: linear-gradient(45deg, #62A869, #62A869, #9adb9f, #62A869, #62A869);
     background-size: 400% 400%;
     animation: fondoHero 12s ease-in-out infinite;
+    overflow: hidden;
+}
+
+.divHero {
+    width: 85vw;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid red;
 }
 
 .heroDivUno {
@@ -175,6 +183,13 @@
 .flechaSiguiente {
     font-size: 1.7rem;
     font-weight: 800;
+}
+
+.imgHero {
+    height: 99%;
+    margin-right: 10rem;
+    margin-top: -1rem;
+    transform: rotate(25deg);
 }
 
 /* filter: drop-shadow para dar sombra a img */
