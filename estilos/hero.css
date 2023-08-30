@@ -259,7 +259,6 @@
     height: 99%;
     margin-right: 10rem;
     margin-top: -1rem;
-    /* transform: rotate(25deg); */
 }
 
 /* filter: drop-shadow para dar sombra a img */
@@ -311,8 +310,18 @@
         align-items: center;
     }
 
+    .divHero {
+        text-align: center;
+    }
+
     .heroDivUno {
         display: none;
+    }
+
+    .imgHero {
+        margin: 0 auto;
+        max-width: 65%;
+        max-height: 65%;
     }
 
 
