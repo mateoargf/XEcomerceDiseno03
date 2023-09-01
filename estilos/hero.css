@@ -317,14 +317,22 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
     }
 
     .divHero {
         text-align: center;
     }
 
-    .heroDivUno {
+    .ocultar {
         display: none;
+    }
+
+    .btnHombre {
+        z-index: 10;
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
     }
 
     .imgHero {
@@ -340,13 +348,11 @@
     }
 
     .btnMujerMobile {
+        z-index: 10;
         position: absolute;
+        bottom: 1rem;
+        left: 1rem;
     }
-
-    .mobileMujerImg {
-        border: 1px solid red;
-    }
-
 
 }
 
