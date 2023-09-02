@@ -10,8 +10,7 @@
 
 
 .btnHombre span:nth-child(1),
-.btnMujer span:nth-child(1), 
-.heroSiguiente span:nth-child(1) {
+.btnMujer span:nth-child(1) {
     width: 100%;
     height: 2px;
     top: 0;
@@ -20,7 +19,7 @@
 
 .btnHombre span:nth-child(2),
 .btnMujer span:nth-child(2), 
-.heroSiguiente span:nth-child(2) {
+.heroSiguiente span:nth-child(1) {
     width: 100%;
     height: 2px;
     bottom: 0;
@@ -28,8 +27,7 @@
 }
 
 .btnHombre span:nth-child(3),
-.btnMujer span:nth-child(3),
-.heroSiguiente span:nth-child(3) {
+.btnMujer span:nth-child(3) {
     width: 2px;
     height: 100%;
     bottom: -100%;
@@ -37,8 +35,7 @@
 }
 
 .btnHombre span:nth-child(4),
-.btnMujer span:nth-child(4),
-.heroSiguiente span:nth-child(4) {
+.btnMujer span:nth-child(4) {
     width: 2px;
     height: 100%;
     top: -100%;
@@ -46,26 +43,23 @@
 }
 
 .btnHombre:hover span:nth-child(1),
-.btnMujer:hover span:nth-child(1),
-.heroSiguiente:hover span:nth-child(1) {
+.btnMujer:hover span:nth-child(1) {
     left: 0;
 }
 
 .btnHombre:hover span:nth-child(2),
 .btnMujer:hover span:nth-child(2),
-.heroSiguiente:hover span:nth-child(2) {
+.heroSiguiente:hover span:nth-child(1) {
     right: 0;
 }
 
 .btnHombre:hover span:nth-child(3),
-.btnMujer:hover span:nth-child(3),
-.heroSiguiente:hover span:nth-child(3) {
+.btnMujer:hover span:nth-child(3) {
     bottom: 0;
 }
 
 .btnHombre:hover span:nth-child(4),
-.btnMujer:hover span:nth-child(4),
-.heroSiguiente:hover span:nth-child(4) {
+.btnMujer:hover span:nth-child(4) {
     top: 0;
 }
 
@@ -169,8 +163,10 @@
 }
 
 .heroSiguiente {
+    width: 8.5rem;
     position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 0.5rem;
     font-weight: 700;
@@ -187,7 +183,6 @@
 
 .flechaSiguiente {
     font-size: 1.7rem;
-    font-weight: 800;
 }
 
 .imgHero {
