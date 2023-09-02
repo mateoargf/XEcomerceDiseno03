@@ -24,6 +24,7 @@
     background: transparent;
     opacity: 0.9;
     box-shadow: none;
+    color: #000;
 }
 
 .btnHombre:hover:before,
