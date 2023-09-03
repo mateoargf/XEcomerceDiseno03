@@ -52,9 +52,16 @@ header {
     font-family: 'Syne', sans-serif;
 }
 
-
-.search:active {
-    width: 14rem;
+.search:active,
+.search:active .lupa,
+.search:active input::placeholder,
+.carrito:active,
+.carrito:active i,
+.menuIcon:active,
+.menuIcon:active i {
+    color: #3f3f3f;
+    border-color: #3f3f3f;
+    fill: #3f3f3f;
 }
 
 input::placeholder,
