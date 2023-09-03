@@ -31,7 +31,6 @@ header {
 .containerNav a:hover::before {
     transform-origin: left;
     transform: scaleX(1);
-    transition: all 0.4s ease-in-out;
 }
 
 .search:hover,
@@ -52,6 +51,8 @@ header {
     font-family: 'Syne', sans-serif;
 }
 
+
+
 .search:active,
 .search:active .lupa,
 .search:active input::placeholder,
@@ -61,15 +62,29 @@ header {
 .menuIcon:active i {
     color: #3f3f3f;
     border-color: #3f3f3f;
-    fill: #3f3f3f;
+    transition: all 0.3s ease-in-out;
+}
+
+.search:focus,
+.search:focus .lupa,
+.search:focus input::placeholder,
+.carrito:focus,
+.carrito:focus i,
+.menuIcon:focus,
+.menuIcon:focus i {
+    color: #3f3f3f;
+    border-color: #3f3f3f;
+    background-color: #3f3f3f;
+    transition: all 0.3s ease-in-out;
 }
 
 input::placeholder,
 .search,
 .lupa,
 .carrito,
-.menuIcon {
-    transition: all 0.6s ease-in-out;
+.menuIcon,
+.containerNav a:hover::before  {
+    transition: all 0.6s ease-in;
 }
 
 
