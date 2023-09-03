@@ -28,9 +28,11 @@ header {
     transition: all 0.5s ease-in-out;
 }
 
-.containerNav a:hover::before {
+.containerNav a:hover::before,
+.containerNav a:focus::before {
     transform-origin: left;
     transform: scaleX(1);
+    
 }
 
 .search:hover,
@@ -59,12 +61,7 @@ header {
 .carrito:active,
 .carrito:active i,
 .menuIcon:active,
-.menuIcon:active i {
-    color: #3f3f3f;
-    border-color: #3f3f3f;
-    transition: all 0.3s ease-in-out;
-}
-
+.menuIcon:active i,
 .search:focus,
 .search:focus .lupa,
 .search:focus input::placeholder,
@@ -74,7 +71,6 @@ header {
 .menuIcon:focus i {
     color: #3f3f3f;
     border-color: #3f3f3f;
-    background-color: #3f3f3f;
     transition: all 0.3s ease-in-out;
 }
 
