@@ -25,13 +25,17 @@ header {
     left: 0;
     transform-origin: right;
     transform: scaleX(0);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .containerNav a:hover::before {
     transform-origin: left;
     transform: scaleX(1);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.search:hover {    
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5);
 }
 
 .search ::placeholder {
@@ -39,10 +43,12 @@ header {
     font-family: 'Syne', sans-serif;
 }
 
+
 .carrito:hover,
 .menuIcon:hover {
     background-color: #4a4a4a3a;
     color: white;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5);
 }
 
 .headerDiv {    
@@ -85,11 +91,11 @@ header {
 }
 
 .headerIcons {
-    width: 18vw;
+    width: 20vw;
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .search {
@@ -104,6 +110,7 @@ header {
     gap: 0.5rem;
     cursor: pointer;
     position: relative;
+    transition: all 0.6s ease-in-out;
 }
 
 .search button {
@@ -114,14 +121,14 @@ header {
 .search input,
 .lupa {
     border: none;
-    color: #4A4A4A;
-    font-weight: 600;
+    color: #000;
+    font-weight: 700;
     outline: none;
 }
 
 .search input {
     text-align: center;
-    width: 3rem;
+    width: 3.5rem;
     cursor: pointer;
 }
 
@@ -132,7 +139,7 @@ header {
     justify-content: center;
     color: #4A4A4A;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.6s ease-in-out;
     border: 2px solid #4A4A4A;
     border-radius: 5px;
     height: 1.9rem;
