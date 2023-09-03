@@ -34,22 +34,37 @@ header {
     transition: all 0.4s ease-in-out;
 }
 
-.search:hover {    
-    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5);
+.search:hover,
+.carrito:hover,
+.menuIcon:hover {    
+    border: 2px solid #4a4a4a7c;
 }
 
-.search ::placeholder {
+.search:hover .lupa,
+.search:hover input::placeholder,
+.carrito:hover,
+.menuIcon:hover {
+    color: #4a4a4a7c;
+}
+
+.search::placeholder {
     color: #4A4A4A;
     font-family: 'Syne', sans-serif;
 }
 
 
-.carrito:hover,
-.menuIcon:hover {
-    background-color: #4a4a4a3a;
-    color: white;
-    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5);
+.search:active {
+    width: 14rem;
 }
+
+input::placeholder,
+.search,
+.lupa,
+.carrito,
+.menuIcon {
+    transition: all 0.6s ease-in-out;
+}
+
 
 .headerDiv {    
     display: flex;
@@ -110,7 +125,6 @@ header {
     gap: 0.5rem;
     cursor: pointer;
     position: relative;
-    transition: all 0.6s ease-in-out;
 }
 
 .search button {
@@ -139,7 +153,6 @@ header {
     justify-content: center;
     color: #4A4A4A;
     cursor: pointer;
-    transition: all 0.6s ease-in-out;
     border: 2px solid #4A4A4A;
     border-radius: 5px;
     height: 1.9rem;
